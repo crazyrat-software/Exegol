@@ -11,10 +11,12 @@ Configuration of this tool is simple and is kept in "config" file which is sourc
 
 ## Initialization/Update
 Before first use you have to run "exegol-create-tools-wrappers.sh" script which will create for each tool a wrapper script.
+
 You can modify each wrapper individually i.e. to add some defaults for the tools.
 If you wish to add new wrapper scripts after modifing "tools" file, all you need is rerun "exegol-create-tools-wrappers.sh".
+
 Script will not overwrite existing files so if you make some customization it will survive unless you remove the files manually.
-Remember to set a prefix in config file as it will spare you some headaches.
+Remember to set a prefix in config file as it will spare you some headaches wondering what is the origin of the tool (local filesystem or exegol container).
 It's simple as 1-2-3!
 
 ## Usage
