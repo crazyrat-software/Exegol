@@ -6,7 +6,7 @@ The idea is to propagate "tools" file with all the tool names included in Exegol
 Configuration of this tool is simple and is kept in "config" file which is sourced to all wrapper scripts for customization puproses.
 ## Config variables are as follows:
 - EXEGOL_BIN_PAT - location of config, list and all the wrapper scripts. Should be added to system PATH environment variable.
-- EXEGOL_ENV - name of the Exegol Docker image being used.
+- EXEGOL_ENV - name of the Exegol Docker container being used.
 - EXEGOL_PREFIX - prefix added before each wrapper script to be easily distinguidhed from regular binaries while using autocomplete in your terminal.
 
 ## Initialization/Update
@@ -16,3 +16,16 @@ If you wish to add new wrapper scripts after modifing "tools" file, all you need
 Script will not overwrite existing files so if you make some customization it will survive unless you remove the files manually.
 Remember to set a prefix in config file as it will spare you some headaches.
 It's simple as 1-2-3!
+
+## Usage
+In your terminal of choice just use it like this:
+
+```
+$ prefix-toolname [args]
+```
+
+and it will run:
+
+```
+$ exegol exec -v container-name 'toolname [args]'
+```
