@@ -1,5 +1,5 @@
 #!/bin/bash
 
-EXEGOL_ENV="test"
+EXEGOL_ENV="crazyrat"
 EXEGOL_PREFIX="xx-"
 EXEGOL_BIN_PATH="${HOME}/bin"
