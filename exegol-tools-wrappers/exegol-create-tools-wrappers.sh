@@ -2,6 +2,8 @@
 
 source config
 
+wget -qO - https://raw.githubusercontent.com/ThePorgs/Exegol-docs/main/source/assets/installed_tools/lists/latest_nightly_arm64.csv | awk -F',' -s '{print $1;}' | tail -n +2 > ${EXEGOL_BIN_PATH}/tools
+
 list=`cat ${EXEGOL_BIN_PATH}/tools`
 
 for i in $list
