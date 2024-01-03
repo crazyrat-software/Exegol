@@ -109,3 +109,4 @@ shared-resources/
 
 # Build logs for debugging
 .build.log
+.DS_Store
